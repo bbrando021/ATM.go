@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.patel.fast.DisplayAccounts">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/savings"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:background="#004879"
+        android:text="Savings"
+        android:onClick="savings"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="187dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/credit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:background="#060968"
+        android:layout_centerInParent="true"
+        android:text="Credit"
+        android:layout_above="@id/savings"
+        android:onClick="credit"
+        android:visibility="visible"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp" />
+
+        <Button
+            android:id="@+id/checking"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/savings"
+            android:layout_alignStart="@+id/savings"
+            android:layout_below="@+id/credit"
+            android:layout_marginTop="76dp"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="checking"
+            android:text="Checking"
+            app:layout_constraintHorizontal_bias="1.0" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
